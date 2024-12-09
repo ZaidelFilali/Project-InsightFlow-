@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E5E7EB; 
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    background-color:white;
+    position: absolute;
+    top: 0;
+    margin-top: 0px;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: xx-large;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+.infobewonerbox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    height: 600px;
+    width: 800px;
+}
+
+.infopersoon{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin-top: 30px;
+}
+
+.gap{
+    height: 20px;
+}
+.infopersoonnaam {
+    font-size: x-large;
+    /* display: flex; */
+    padding-left: 320px;
+    justify-content: center;
+    font-weight: 600;
+    border-bottom: solid black 1px;
+}
+
+.text{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+}
+
+.dikgedrukt{
+    font-weight: 600;
+}
+
+.infocontent{
+margin-left: 10px;
+margin-top: 10px;
+font-size: x-large;
+}
+
+.bewoner{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 5%;
+    height: 500px;
+    width: 800px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.persoonnaam{
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.zorgbehoeftecontent{
+border: 1px solid black;
+width: 30%;
+padding: 10px;
+height: 150px;
+font-size: large;
+}
+
+.back{
+    border: none;
+    justify-content: center;
+    color: #ffff;
+    font-size: 23px;
+    background-color: #e46eca;
+    width: 40px;
+    height: 40px;
+    border-radius: 50% ;
+    border: solid 1px #E5E7EB;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.text2{
+    text-align: center; 
+    margin-left: 155px;
+    /* Center the text horizontally */
+}
+
+.back:hover{
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: xx-large;
+  color: white;
+  border-radius: 50% ;
+}
+
+button{
+    border: none;
+    background-color: white;
+    height: 100px;
+}
+
+  .Logout{
+    color: red;
+    padding: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.Change{
+    padding: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;     
+    margin-right: 30px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right: 0;
+    border: solid black 1px;
+    margin-top: 5px;
+  }
+
+  .VerwijderBewoner{
+    background-color: red;
+    height: 40px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+}
+
+  .Annuleer{
+    height: 40px;
+    width: 110px;
+    background-color: lightgray;
+    border: none;
+  }
+
+  .swal-button.VerwijderBewoner {
+    background-color: #f44336; /* Initial background color */
+    color: white;  
+    height: 40px;
+    width: 110px;
+    border: none;             
+    cursor: pointer;          
+    border-radius: 5px;  
+}
+
+/* Change the hover color */
+.swal-button.VerwijderBewoner:hover {
+    background-color: #b12525; /* Hover background color */
+    border: none;
+}
+
+.swal-button.Annuleer:hover{
+    background-color: rgb(175, 173, 173);
+    border: none;
+}
+
+.VerijderRes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+.Bewerk {
+    background-color: #e46eca;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+.Delete {
+    background-color: #f44336; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,292 @@
+body{
+    margin: 0px;
+   background-color: #E5E7EB; 
+   font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar {
+    width: 13%;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+}
+
+.sidebar-content {
+    position: fixed;
+    top: 120px;
+    left: 10px;
+    width: 10%; 
+    max-width: 300px; 
+    min-width: 100px; /* Set a minimum width to prevent it from getting too small on small screens */
+    overflow-y: auto;
+    height: calc(100vh - 120px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media query for small screens */
+@media (max-width: 1250px) {
+    .sidebar-content {
+        width: 2%; 
+        left: 5px; 
+    }
+}
+
+.logo{
+    font-size: xx-large;
+    margin-left: 30px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+p{
+    margin: 0px;
+}
+
+.login{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    width: 300px;
+    height: 500px;
+    border: solid 1px black;
+}
+
+.Logout{
+    color: red;
+    padding: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.Change{
+    padding: 5px;
+    cursor: pointer;
+    background-color: #e46eca;
+    border: none;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+
+}
+
+.content {
+    flex-grow: 1; 
+    margin: 10px;
+    width: 80%;
+    margin-top: 120px;
+}
+
+.toevoegen {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px; 
+    width: 320px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons{
+    background-color: #e46eca;
+    color: white;
+    padding: 12px;
+    border-radius: 10px; 
+    border: none;
+    width: 150px;
+}
+
+.buttons:hover{
+    box-shadow: 20px 10px 15px -12px rgb(0 0 0 / 0.25);
+    cursor: pointer;
+}
+
+.bewonersbox{
+    display: flex; 
+    margin-top: 1rem;  
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 40px;
+    width: 95%;
+    flex-wrap: wrap; 
+}
+
+.persoon{
+    border-radius: 0.5rem; 
+    border-width: 1px; 
+    background-color: #F3F4F6; 
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    padding: 10px;
+    padding-bottom: 15px ;
+    gap: 10px;
+    width: 350px;
+    font-size: x-large;
+    border-radius: 0.5rem; 
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+}
+
+input{
+    width: 150px;
+    margin: 5px 0px;
+}
+
+.personen{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.persoonnaam{
+    display: flex;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+.dikgedrukt{
+    font-weight: 600;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+.add-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.filter-menu {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filter-menu h2 {
+    margin-bottom: 10px;
+}
+
+.filter-menu label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter-menu input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.resident-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resident-info p {
+    margin-bottom: 5px;
+}
+
+.infobutton {
+border: none;
+height: 10px;
+}
+
+.infobutton:hover{
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;     
+    margin-right: 30px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right: 0;
+    border: solid black 1px;
+    margin-top: 5px;
+  }
+
+  button{
+    border: none;
+    height: 100px;
+}
+
+.ifempty {
+    display: flex;
+    justify-content: center;
+    width: 87%;
+
+}
+
+.zoeken {
+    background-color: #e46eca;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.zoek:hover{
+    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+}
